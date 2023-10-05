@@ -1,0 +1,215 @@
+body {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #a3a3a3;
+  padding: 10px;
+}
+
+nav span {
+  text-align: right;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0px;
+}
+
+nav li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+nav a {
+  padding: 8px;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  border-radius: 10px;
+  background-color:#595959;
+}
+
+nav{
+  margin-top: 3px;
+  margin-bottom: 6px;
+}
+
+main {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h1, h2 {
+  font-weight: bold;
+  text-align: center;
+  border-radius: 14px;
+  background-color: #333;
+  color: white;
+}
+
+h2 {
+  margin-top: 20px;
+}
+
+p {
+  margin-bottom: 20px;
+}
+
+ul, ol {
+  margin-bottom: 20px;
+}
+
+img {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  height: auto;
+}
+
+a[href="#top"] {
+  display: block;
+  text-align: center;
+  margin-top: 20px;
+  text-decoration: none;
+  color: white;
+  background-color: #333;
+  border-radius: 10px;
+}
+
+table.iksweb{
+	width: 100%;
+	border-collapse:collapse;
+	border-spacing:0;
+	height: 150px;
+}
+table.iksweb,table.iksweb td, table.iksweb th {
+	border: 1px solid #595959;
+}
+table.iksweb td,table.iksweb th {
+	padding: 3px;
+	width: 30px;
+	height: 35px;
+}
+table.iksweb th {
+	background: #347c99; 
+	color: #fff; 
+	font-weight: normal;
+}
+h1, h2 {
+  box-shadow: 2px 2px 5px #888888;
+}
+nav a:hover {
+  background-color: #444444;
+}
+img:hover {
+  transform: scale(1.3);
+  transition: transform 0.3s ease-in-out;
+}
+table.iksweb td:hover {
+  background-color: #a5f480;
+}
+p a {
+  border-bottom: 1px solid #333;
+}
+
+
+
+
+
+
+img {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  height: auto;
+  transition: transform 0.3s ease-in-out;
+}
+
+img:hover {
+  transform: scale(1.1);
+}
+
+img:hover:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.5);
+  z-index: 1;
+}
+
+img:hover:before {
+  content: "\f00d";
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-family: FontAwesome;
+  font-size: 50px;
+  color: #fff;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+}
+
+img:hover:after, img:hover:before {
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+img:hover:after {
+  opacity: 1;
+}
+
+img:hover:before {
+  opacity: 0.5;
+}
+
+img:hover:after, img:hover:before {
+  pointer-events: none;
+}
+
+nav ul li a em:hover {
+  color: rgb(107, 231, 107);
+}
+
+
+
+
+
+
+.menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+}
+
+/* Задаем высоту для шапки страницы, чтобы она не перекрывала меню */
+.header {
+  height: 100px;
+}
+
+/* Добавляем класс "sticky" для меню при прокрутке страницы вверх */
+.sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+}
